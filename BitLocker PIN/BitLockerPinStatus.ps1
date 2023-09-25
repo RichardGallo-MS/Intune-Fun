@@ -9,7 +9,7 @@ foreach ($bitLockerVolume in $bitLockerVolumes) {
 
     $keyProtectors = $bitLockerVolume.KeyProtector
 
-#look at each prtotector to see if it's a PIN type
+#look at each prtotector to see if it's a PIN type.
     foreach ($keyProtector in $keyProtectors){
 
         If ($keyProtector.KeyProtectorType -eq "TpmPin") {
